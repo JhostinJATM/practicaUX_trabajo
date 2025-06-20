@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Partido en Vivo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/envivo.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">🏆 <strong>SportBoard</strong></div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#">Mis Competiciones</a>
+        <a href="#">Crear Competición</a>
+        <a href="partidosEnVivo.html">En Vivo</a>
+      </nav>
+      <div class="user-section">
+        <input type="text" placeholder="🔍 Search" />
+        <span class="icon">🔔</span>
+        <span class="avatar">👤</span>
+      </div>
+    </header>
+
+    <main class="live-match">
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <ol>
+          <li><a href="#">Torneos</a></li>
+          <li><a href="#">Liga de Verano</a></li>
+          <li aria-current="page">Partido en Vivo</li>
+        </ol>
+      </nav>
+
+      <h1>Partido en Vivo: Equipo A vs. Equipo B</h1>
+
+      <section class="marcador">
+        <div class="score card">
+          <h4>Marcador</h4>
+          <p><strong>2 - 1</strong></p>
+        </div>
+        <div class="tiempo card">
+          <h4>Tiempo Restante</h4>
+          <p><strong>15:00</strong></p>
+        </div>
+      </section>
+
+      <section class="eventos card">
+        <h2>Eventos del Partido</h2>
+        <ul>
+          <li>⚽ Gol de Equipo A <span>Minuto 25</span></li>
+          <li>🟨 Tarjeta Amarilla para Equipo B <span>Minuto 40</span></li>
+          <li>🔁 Sustitución en Equipo A <span>Minuto 60</span></li>
+        </ul>
+      </section>
+
+      <section class="alineaciones card">
+        <h2>Alineaciones</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Jugador</th>
+              <th>Posición</th>
+              <th>Equipo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Carlos</td>
+              <td><a href="#">Delantero</a></td>
+              <td>Equipo A</td>
+            </tr>
+            <tr>
+              <td>Sofía</td>
+              <td><a href="#">Centrocampista</a></td>
+              <td>Equipo A</td>
+            </tr>
+            <tr>
+              <td>Diego</td>
+              <td><a href="#">Defensa</a></td>
+              <td>Equipo A</td>
+            </tr>
+            <tr>
+              <td>Ana</td>
+              <td><a href="#">Portero</a></td>
+              <td>Equipo A</td>
+            </tr>
+            <tr>
+              <td>Javier</td>
+              <td><a href="#">Delantero</a></td>
+              <td>Equipo B</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="ver-resultados">
+        <button id="btn-ver-resultados">Ver Resultados</button>
+      </section>
+    </main>
+
+    <script src="js/envivo.js"></script>
+  </body>
+</html>

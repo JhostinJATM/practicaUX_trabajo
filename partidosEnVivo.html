@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Partidos en Vivo | SportBoard</title>
+    <link rel="stylesheet" href="css/live-list.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">🏆 <strong>SportBoard</strong></div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#">Mis Competiciones</a>
+        <a href="#">Crear Competición</a>
+        <a href="partidosEnVivo.html">En Vivo</a>
+      </nav>
+      <div class="user-section">
+        <input type="text" placeholder="🔍 Search" />
+        <span class="icon">🔔</span>
+        <span class="avatar">👤</span>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>Partidos en Vivo</h1>
+
+      <table class="live-matches-table">
+        <thead>
+          <tr>
+            <th>Partido</th>
+            <th>Marcador</th>
+            <th>Tiempo restante</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr onclick="location.href='envivo.html'">
+            <td>Leones Azules vs Halcones Dorados</td>
+            <td>10 - 2</td>
+            <td>15:30</td>
+          </tr>
+          <tr onclick="location.href='envivo.html'">
+            <td>Dragones Plateados vs Tigres Carmesí</td>
+            <td>7 - 7</td>
+            <td>08:45</td>
+          </tr>
+          <tr onclick="location.href='envivo.html'">
+            <td>Toros Negros vs Águilas Rojas</td>
+            <td>3 - 4</td>
+            <td>21:10</td>
+          </tr>
+          <tr onclick="location.href='envivo.html'">
+            <td>Panteras Doradas vs Serpientes Verdes</td>
+            <td>12 - 9</td>
+            <td>05:22</td>
+          </tr>
+          <tr onclick="location.href='envivo.html'">
+            <td>Osos Grises vs Lobos Blancos</td>
+            <td>6 - 11</td>
+            <td>13:15</td>
+          </tr>
+          <tr onclick="location.href='envivo.html'">
+            <td>Rinocerontes Azules vs Zorros Naranjas</td>
+            <td>0 - 0</td>
+            <td>29:59</td>
+          </tr>
+          <tr onclick="location.href='envivo.html'">
+            <td>Halcones Negros vs Panteras Carmesí</td>
+            <td>8 - 5</td>
+            <td>17:40</td>
+          </tr>
+          <tr onclick="location.href='envivo.html'">
+            <td>Tiburones Plateados vs Caimanes Dorados</td>
+            <td>4 - 6</td>
+            <td>12:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

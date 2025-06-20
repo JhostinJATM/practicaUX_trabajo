@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Competiciones | SportBoard</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">🏆 <strong>SportBoard</strong></div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#">Mis Competiciones</a>
+        <a href="#">Crear Competición</a>
+        <a href="partidosEnVivo.html">En Vivo</a>
+      </nav>
+      <div class="user-section">
+        <input type="text" placeholder="🔍 Search" />
+        <span class="icon">🔔</span>
+        <span class="avatar">👤</span>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="header">
+        <h1>Competiciones</h1>
+        <p>Explora las competiciones de fútbol disponibles y encuentra la ideal para ti.</p>
+        <input
+          type="text"
+          class="search"
+          placeholder="🔍 Buscar competiciones por nombre o categoría"
+        />
+      </section>
+
+      <section class="tabs">
+        <button class="tab active" data-target="activos">Activas</button>
+        <button class="tab" data-target="proximos">Próximas</button>
+        <button class="tab" data-target="finalizados">Finalizadas</button>
+      </section>
+
+      COMPETICIONES ACTIVAS -->
+      <div class="tab-section active" id="activos">
+        <h2>Competiciones Activas</h2>
+
+        <div class="torneo">
+          <a href="estadisticas.html" class="btn-estadisticas">
+            <div class="textos">
+              <h3>Liga de Fútbol 11 Verano</h3>
+              <p>
+                Fútbol 11 | 15 de junio - 20 de julio | Organizado por Club Deportivo Los Leones
+              </p>
+            </div>
+          </a>
+          <div class="svg-icon">
+            Fútbol SVG -->
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+              <circle
+                cx="32"
+                cy="32"
+                r="30"
+                fill="#4CAF50"
+                stroke="#2E7D32"
+                stroke-width="4"
+              />
+              <path
+                d="M32 12l6 10h-12l6-10zM32 52l-6-10h12l-6 10zM12 32l10-6v12l-10-6zM52 32l-10 6V26l10 6z"
+                fill="#fff"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="torneo">
+          <div class="textos">
+            <h3>Liga de Fútbol Sala</h3>
+            <p>
+              Fútbol Sala | 1 de junio - 30 de junio | Organizado por Ayuntamiento de Villaverde
+            </p>
+          </div>
+          <div class="svg-icon">
+            Fútbol Sala SVG similar al fútbol -->
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+              <circle
+                cx="32"
+                cy="32"
+                r="30"
+                fill="#388E3C"
+                stroke="#1B5E20"
+                stroke-width="4"
+              />
+              <path
+                d="M22 22l20 20M42 22L22 42"
+                stroke="#fff"
+                stroke-width="3"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      COMPETICIONES PRÓXIMAS -->
+      <div class="tab-section" id="proximos">
+        <h2>Próximas Competiciones</h2>
+
+        <div class="torneo">
+          <div class="textos">
+            <h3>Torneo de Fútbol Juvenil Primavera</h3>
+            <p>
+              Fútbol 7 | 1 de abril - 15 de abril | Organizado por Club Deportivo Juvenil Las Estrellas
+            </p>
+          </div>
+          <div class="svg-icon">
+            Fútbol 7 SVG -->
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+              <circle
+                cx="32"
+                cy="32"
+                r="30"
+                fill="#81C784"
+                stroke="#388E3C"
+                stroke-width="4"
+              />
+              <path d="M22 32a10 10 0 0020 0 10 10 0 00-20 0z" fill="#fff" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="torneo">
+          <div class="textos">
+            <h3>Campeonato de Fútbol Playa</h3>
+            <p>
+              Fútbol Playa | 22 de julio - 24 de julio | Organizado por Federación de Fútbol Playa
+            </p>
+          </div>
+          <div class="svg-icon">
+            Fútbol Playa SVG -->
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+              <circle
+                cx="32"
+                cy="32"
+                r="30"
+                fill="#AED581"
+                stroke="#689F38"
+                stroke-width="4"
+              />
+              <path
+                d="M16 16l32 32M48 16L16 48"
+                stroke="#558B2F"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      COMPETICIONES FINALIZADAS -->
+      <div class="tab-section" id="finalizados">
+        <h2>Competiciones Finalizadas</h2>
+
+        <div class="torneo">
+          <div class="textos">
+            <h3>Torneo de Fútbol Amateur Invierno</h3>
+            <p>
+              Fútbol 11 | 1 de diciembre - 15 de diciembre | Organizado por Club Deportivo Amateur El Globo
+            </p>
+          </div>
+          <div class="svg-icon">
+            Fútbol SVG -->
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+              <circle
+                cx="32"
+                cy="32"
+                r="30"
+                fill="#4CAF50"
+                stroke="#2E7D32"
+                stroke-width="4"
+              />
+              <path
+                d="M32 12l6 10h-12l6-10zM32 52l-6-10h12l-6 10zM12 32l10-6v12l-10-6zM52 32l-10 6V26l10 6z"
+                fill="#fff"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="torneo">
+          <div class="textos">
+            <h3>Campeonato de Fútbol Rápido</h3>
+            <p>
+              Fútbol 5 | 5 de marzo | Organizado por Club Deportivo Rápido La Torre
+            </p>
+          </div>
+          <div class="svg-icon">
+            Fútbol 5 SVG -->
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+              <circle
+                cx="32"
+                cy="32"
+                r="30"
+                fill="#66BB6A"
+                stroke="#388E3C"
+                stroke-width="4"
+              />
+              <path d="M22 32a10 10 0 0020 0 10 10 0 00-20 0z" fill="#fff" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

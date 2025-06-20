@@ -1,0 +1,228 @@
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  line-height: 1.6;
+}
+
+main.live-match {
+  max-width: 1200px;       
+  margin: 2.5rem auto;    
+  padding: 1.5rem 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgb(0 0 0 / 0.08);
+  width: 90vw;             
+  box-sizing: border-box; 
+}
+
+.breadcrumb ol {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.breadcrumb ol li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb ol li + li::before {
+  content: "›";
+  margin: 0 0.5rem;
+  color: #94a3b8;
+}
+
+.breadcrumb a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+  color: #1e40af;
+}
+
+/* Títulos */
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #1e293b;
+}
+
+/* Secciones con tarjetas */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.6rem 2rem;
+  box-shadow: 0 3px 12px rgb(0 0 0 / 0.06);
+  margin-bottom: 2.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.1);
+}
+
+/* Marcador estilo flex */
+.marcador {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+
+.marcador > div {
+  flex: 1;
+  text-align: center;
+  border-left: 5px solid #2563eb;
+}
+
+.marcador h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 0.8rem;
+}
+
+.marcador p strong {
+  font-size: 2.5rem;
+  color: #1e3a8a;
+  letter-spacing: 0.05em;
+}
+
+/* Eventos */
+.eventos h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #334155;
+}
+
+.eventos ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.eventos li {
+  padding: 0.75rem 1rem;
+  border-left: 5px solid #3b82f6;
+  background: #f0f9ff;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #1e293b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.eventos li:hover {
+  background-color: #dbeafe;
+}
+
+.eventos li span {
+  font-size: 0.85rem;
+  color: #64748b;
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+/* Tabla alineaciones */
+.alineaciones h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #334155;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgb(0 0 0 / 0.04);
+}
+
+thead {
+  background-color: #eff6ff;
+}
+
+th, td {
+  padding: 1rem 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e7ff;
+  font-weight: 500;
+  color: #475569;
+}
+
+tbody tr {
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+  background-color: #f0f9ff;
+}
+
+td a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .marcador {
+    flex-direction: column;
+  }
+
+  main.live-match {
+    padding: 1rem 1.2rem;
+    margin: 1.5rem auto;
+  }
+}
+
+.ver-resultados {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#btn-ver-resultados {
+  background-color: #4b5563;
+  color: #f9fafb; 
+  border: none;
+  padding: 0.75rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgb(75 85 99 / 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#btn-ver-resultados:hover {
+  background-color: #374151; 
+  box-shadow: 0 6px 12px rgb(55 65 81 / 0.5);
+}
+
+#btn-ver-resultados:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}

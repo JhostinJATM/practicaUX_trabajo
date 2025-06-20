@@ -1,0 +1,225 @@
+/* Reusar tipografía y fondo */
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Contenedor principal */
+main.resultados-partido {
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  padding: 1.5rem 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgb(0 0 0 / 0.08);
+  width: 90vw;
+  box-sizing: border-box;
+}
+
+/* Breadcrumb - reutilizar estilos de envivo.css */
+.breadcrumb ol {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.breadcrumb ol li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb ol li + li::before {
+  content: "›";
+  margin: 0 0.5rem;
+  color: #94a3b8;
+}
+
+.breadcrumb a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+  color: #1e40af;
+}
+
+/* Titulos */
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #1e293b;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #334155;
+}
+
+/* Tarjetas */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.6rem 2rem;
+  box-shadow: 0 3px 12px rgb(0 0 0 / 0.06);
+  margin-bottom: 2.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.1);
+}
+
+/* Marcador final renovado */
+.marcador-final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%); /* gris claro degradado */
+  border-radius: 16px;
+  padding: 2rem 3rem;
+  color: #1f2937; /* texto oscuro para buen contraste */
+  box-shadow: 0 8px 20px rgb(209 213 219 / 0.4);
+  margin-bottom: 3rem;
+  user-select: none;
+}
+
+.marcador-final .equipo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.marcador-final .equipo .icono {
+  font-size: 6rem; /* tamaño grande para iconos */
+  margin-bottom: 0.5rem;
+  user-select: none;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.marcador-final .equipo .nombre {
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-shadow: 0 2px 6px rgb(0 0 0 / 0.4);
+  user-select: none;
+}
+
+/* El marcador grande en el centro */
+.marcador-final .resultado {
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  line-height: 1;
+  text-shadow: 0 4px 10px rgb(0 0 0 / 0.5);
+  user-select: text;
+  flex-shrink: 0;
+}
+
+/* Resumen */
+.resumen p {
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.5;
+}
+.resumen ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.resumen li {
+  padding: 0.75rem 1rem;
+  border-left: 5px solid #3b82f6;
+  background: #f0f9ff;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #1e293b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.resumen li:hover {
+  background-color: #dbeafe;
+}
+
+.resumen li span {
+  font-size: 0.85rem;
+  color: #64748b;
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+/* Tabla estadisticas */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgb(0 0 0 / 0.04);
+}
+
+thead {
+  background-color: #eff6ff;
+}
+
+th, td {
+  padding: 1rem 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e7ff;
+  font-weight: 500;
+  color: #475569;
+}
+
+tbody tr {
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+  background-color: #f0f9ff;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  main.resultados-partido {
+    padding: 1rem 1.2rem;
+    margin: 1.5rem auto;
+  }
+
+  .marcador-final {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+  }
+
+  .marcador-final .resultado {
+    font-size: 4rem;
+  }
+
+  .marcador-final .equipo .icono {
+    font-size: 4.5rem;
+  }
+
+  .marcador-final .equipo .nombre {
+    font-size: 1.3rem;
+  }
+}

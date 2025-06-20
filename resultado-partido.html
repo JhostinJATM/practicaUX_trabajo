@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Resultados del Partido</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/resultado-partido.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">🏆 <strong>SportBoard</strong></div>
+      <nav>
+         <a href="index.html">Inicio</a>
+        <a href="#">Mis Competiciones</a>
+        <a href="#">Crear Competición</a>
+        <a href="partidosEnVivo.html">En Vivo</a>
+      </nav>
+      <div class="user-section">
+        <input type="text" placeholder="🔍 Search" />
+        <span class="icon">🔔</span>
+        <span class="avatar">👤</span>
+      </div>
+    </header>
+
+    <main class="resultados-partido">
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <ol>
+          <li><a href="#">Torneos</a></li>
+          <li><a href="#">Liga de Verano</a></li>
+          <li aria-current="page">Resultados del Partido</li>
+        </ol>
+      </nav>
+
+      <h1>Resultados: Equipo A vs. Equipo B</h1>
+
+      <section class="marcador-final card">
+        <div class="equipo">
+          <div class="icono">⚽</div>
+          <div class="nombre">Equipo A</div>
+        </div>
+
+        <div class="resultado">2 - 1</div>
+
+        <div class="equipo">
+          <div class="icono">🥅</div>
+          <div class="nombre">Equipo B</div>
+        </div>
+      </section>
+
+      <section class="resumen card">
+        <h2>Resumen del Partido</h2>
+        <ul>
+          <li>⚽ Gol de Equipo A <span>Minuto 25</span></li>
+          <li>🟨 Tarjeta Amarilla para Equipo B <span>Minuto 40</span></li>
+          <li>🔁 Sustitución en Equipo A <span>Minuto 60</span></li>
+        </ul>
+      </section>
+
+      <section class="estadisticas card">
+        <h2>Estadísticas Clave</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Estadística</th>
+              <th>Equipo A</th>
+              <th>Equipo B</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Posesión</td>
+              <td>58%</td>
+              <td>42%</td>
+            </tr>
+            <tr>
+              <td>Tiros a puerta</td>
+              <td>10</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>Faltas</td>
+              <td>12</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Tarjetas amarillas</td>
+              <td>1</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Tarjetas rojas</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="js/resultado-partido.js"></script>
+  </body>
+</html>

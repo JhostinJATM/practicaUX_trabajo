@@ -1,0 +1,108 @@
+/* Container principal */
+.container {
+  max-width: 1200px;
+  margin: 3rem auto 4rem;
+  padding: 0 2.5rem;
+  user-select: text;
+}
+
+/* Título */
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #0d47a1;
+  margin-bottom: 2.5rem;
+  letter-spacing: 1px;
+}
+
+/* Tabla estilizada - diseño tipo primer bloque */
+.live-matches-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgb(0 0 0 / 0.04);
+  background: #fff;
+  font-weight: 500;
+  color: #475569;
+}
+
+.live-matches-table thead {
+  background-color: #eff6ff;
+}
+
+.live-matches-table th,
+.live-matches-table td {
+  padding: 1rem 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e7ff;
+}
+
+.live-matches-table tbody tr {
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.live-matches-table tbody tr:hover {
+  background-color: #f0f9ff;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.1);
+}
+
+.live-matches-table tbody td {
+  font-size: 1rem;
+  user-select: text;
+}
+
+.live-matches-table td a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.live-matches-table td a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .live-matches-table thead {
+    display: none;
+  }
+
+  .live-matches-table,
+  .live-matches-table tbody,
+  .live-matches-table tr,
+  .live-matches-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .live-matches-table tr {
+    margin-bottom: 1.5rem;
+    box-shadow: 0 3px 12px rgb(0 0 0 / 0.04);
+    border-radius: 10px;
+    background: #fff;
+  }
+
+  .live-matches-table td {
+    padding: 1rem 1.2rem;
+    text-align: left;
+    font-size: 1rem;
+    position: relative;
+    border-bottom: 1px solid #e0e7ff;
+  }
+
+  .live-matches-table td:last-child {
+    border-bottom: 0;
+  }
+
+  .live-matches-table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: 700;
+    color: #2563eb;
+    text-transform: uppercase;
+  }
+}

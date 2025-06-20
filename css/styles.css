@@ -1,0 +1,280 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+
+body {
+  background: #f8fafc;
+  color: #111827;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  background: #1E293B;
+  color: white;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(30, 41, 59, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  cursor: default;
+}
+
+.navbar nav a {
+  margin: 0 1.2rem;
+  text-decoration: none;
+  color: #cbd5e1;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: #3b82f6;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.user-section input {
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  border: none;
+  width: 180px;
+  font-size: 0.9rem;
+  background: #1e293b;
+  color: #cbd5e1;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.user-section input::placeholder {
+  color: #64748b;
+}
+
+.user-section input:focus {
+  background: #334155;
+}
+
+/* Contenedor principal */
+.container {
+  background: white;
+  max-width: 1100px;
+  width: 90vw;
+  margin: 3rem auto 5rem;
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.1);
+  flex-grow: 1;
+}
+
+/* Header */
+.header h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #1e293b;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.6px;
+}
+
+.header p {
+  color: #475569;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.search {
+  width: 100%;
+  padding: 0.85rem 1.3rem;
+  border-radius: 50px;
+  border: 2px solid #3b82f6;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: inset 0 0 6px #93c5fd;
+}
+
+.search:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 10px #2563eb;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 3rem;
+  border-bottom: 3px solid #3b82f6;
+}
+
+.tab {
+  padding: 0.9rem 2.5rem;
+  background: transparent;
+  border: none;
+  border-radius: 50px 50px 0 0;
+  font-weight: 700;
+  color: #93c5fd;
+  cursor: pointer;
+  font-size: 1.15rem;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 -3px 0 transparent;
+}
+
+.tab:hover {
+  color: #2563eb;
+  box-shadow: inset 0 -3px 0 #2563eb;
+}
+
+.tab.active {
+  color: #1e40af;
+  box-shadow: inset 0 -4px 0 #1e40af;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+/* Tab sections */
+.tab-section {
+  display: none;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.tab-section.active {
+  display: block;
+}
+
+/* Torneo card */
+.torneo {
+  background: #f9fafb;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem 2.5rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.torneo:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(59, 130, 246, 0.25);
+}
+
+.torneo .textos {
+  flex: 1;
+  padding-right: 2.5rem;
+}
+
+.torneo h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.45rem;
+  color: #1e293b;
+  letter-spacing: 0.4px;
+}
+
+.torneo p {
+  font-size: 1rem;
+  color: #64748b;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.btn-estadisticas {
+  text-decoration: none;
+  color: inherit;
+  display: block;   
+  cursor: pointer;
+}
+
+/* SVG icon style */
+.svg-icon {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.08));
+  transition: transform 0.3s ease;
+}
+
+.torneo:hover .svg-icon {
+  transform: scale(1.1);
+}
+
+/* Animación fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .torneo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 1.4rem 1.4rem;
+  }
+
+  .torneo .textos {
+    padding-right: 0;
+  }
+
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .user-section input {
+    width: 120px;
+  }
+
+  .container {
+    width: 95vw;
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar nav {
+    display: none;
+  }
+
+  .container {
+    padding: 1.5rem 1rem;
+  }
+
+  .search {
+    font-size: 0.95rem;
+  }
+}
