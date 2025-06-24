@@ -1,6 +1,11 @@
 # 🏆 SportBoard - Proyecto de Diseño UX/UI e Implementación Web
 
-Este proyecto tiene como objetivo desarrollar una aplicación web para la gestión de campeonatos deportivos, aplicando buenas prácticas de diseño UX/UI e implementando la interfaz con tecnologías web modernas.
+![Interfaz 1](imgs/interfaz1.png)
+![Interfaz 2](imgs/interfaz2.png)
+![Interfaz 3](imgs/interfaz3.png)
+![Interfaz 4](imgs/interfaz4.png)
+![Interfaz 5](imgs/interfaz5.png)
+![Interfaz 6](imgs/interfaz6.png)
 
 ---
 
