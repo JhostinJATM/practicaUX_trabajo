@@ -1,0 +1,370 @@
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fafc;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  line-height: 1.6;
+}
+
+.equipo-info-container {
+  max-width: 1000px;
+  margin: 3rem auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(30,41,59,0.10);
+  overflow: hidden;
+  padding: 0;
+}
+
+.equipo-banner {
+  background: #1e293b;
+  color: #fff;
+  padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 2px 12px rgba(30,41,59,0.10);
+}
+
+.equipo-icono {
+  font-size: 4.5rem;
+  user-select: none;
+  background: #fff;
+  color: #1e293b;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(30,41,59,0.10);
+}
+
+.equipo-banner-info h1 {
+  font-size: 2.3rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.categoria, .entrenador {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.equipo-detalle {
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  background: #f8fafc;
+}
+
+.equipo-detalle h2 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  color: #1e293b;
+  letter-spacing: 0.5px;
+}
+
+.plantilla {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem 2.5rem;
+}
+
+.plantilla li {
+  padding: 0.7rem 1.2rem;
+  font-size: 1.08rem;
+  color: #1e293b;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(30,41,59,0.07);
+  min-width: 180px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.plantilla li strong {
+  color: #2563eb;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #e3e9f1;
+  box-shadow: 0 1px 0 #e5e7eb;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.9rem 1.1rem;
+  text-align: center;
+  border-bottom: 1px solid #e3e9f1;
+  font-weight: 500;
+  color: #37474f;
+  font-size: 1rem;
+}
+
+thead th {
+  background-color: #f1f5f9;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.resumen {
+  margin-top: 1.2rem;
+  font-weight: 500;
+  font-size: 1.08rem;
+  color: #1e293b;
+  line-height: 1.5;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(30,41,59,0.07);
+  padding: 1.2rem 1.5rem;
+}
+
+.btn-volver {
+  background-color: transparent;
+  border: none;
+  font-size: 1.1rem;
+  color: #1e293b;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 1.5rem 0 0 2.5rem;
+  transition: color 0.25s ease;
+  padding: 0;
+  display: block;
+}
+
+.btn-volver:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.plantilla-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.5rem 2.5rem;
+  margin-bottom: 2.2rem;
+}
+
+.jugador-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(30,41,59,0.08);
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1.1rem 1.3rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+  border: 1.5px solid #e5e7eb;
+}
+.jugador-card:hover {
+  box-shadow: 0 6px 24px rgba(30,41,59,0.13);
+  transform: translateY(-2px) scale(1.03);
+  border-color: #2563eb22;
+}
+
+.plantilla-tactica {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.cancha {
+  position: relative;
+  width: 340px;
+  height: 440px;
+  background: linear-gradient(180deg, #e0e7ef 60%, #f8fafc 100%);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(30,41,59,0.08);
+  border: 2px solid #e5e7eb;
+  margin: 0 auto;
+}
+
+/* Líneas de la cancha */
+.cancha::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #cbd5e1;
+  transform: translateX(-50%);
+  opacity: 0.5;
+}
+
+.jugador-pos {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90px;
+}
+
+.portero {
+  left: 50%;
+  top: 370px;
+  transform: translateX(-50%);
+}
+.defensa {
+  left: 50%;
+  top: 270px;
+  transform: translateX(-50%);
+}
+.medio {
+  left: 50%;
+  top: 170px;
+  transform: translateX(-50%);
+}
+.delantero {
+  left: 50%;
+  top: 60px;
+  transform: translateX(-50%);
+}
+
+.jugador-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f1f5f9 60%, #e0e7ef 100%);
+  color: #2563eb;
+  font-weight: 900;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(30,41,59,0.07);
+  letter-spacing: 1px;
+  border: 2.5px solid #2563eb33;
+}
+
+.jugador-nombre {
+  font-weight: 700;
+  color: #1e293b;
+  font-size: 1.08rem;
+  margin-top: 0.4rem;
+}
+
+.jugador-posicion {
+  color: #64748b;
+  font-size: 0.98rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.plantilla-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-bottom: 2.2rem;
+}
+
+.jugador-list-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(30,41,59,0.08);
+  padding: 0.9rem 1.3rem;
+  gap: 1.1rem;
+  border: 1.5px solid #e5e7eb;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.jugador-list-card:hover {
+  box-shadow: 0 6px 24px rgba(30,41,59,0.13);
+  border-color: #2563eb22;
+}
+
+.jugador-list-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f1f5f9 60%, #e0e7ef 100%);
+  color: #2563eb;
+  font-weight: 900;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(30,41,59,0.07);
+  letter-spacing: 1px;
+  border: 2.5px solid #2563eb33;
+}
+
+.jugador-list-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.jugador-list-nombre {
+  font-weight: 700;
+  color: #1e293b;
+  font-size: 1.08rem;
+}
+
+.jugador-list-posicion {
+  color: #64748b;
+  font-size: 0.98rem;
+  font-weight: 500;
+}
+
+@media (max-width: 700px) {
+  .equipo-info-container {
+    padding: 0;
+  }
+  .equipo-banner, .equipo-detalle {
+    padding: 1.2rem 0.7rem;
+  }
+  .btn-volver {
+    margin-left: 0.7rem;
+  }
+  .plantilla li {
+    min-width: 120px;
+    font-size: 0.95rem;
+  }
+  th, td {
+    font-size: 0.85rem;
+  }
+  .equipo-banner-info h1 {
+    font-size: 1.5rem;
+  }
+  .cancha {
+    width: 98vw;
+    max-width: 320px;
+    height: 340px;
+  }
+  .jugador-pos {
+    width: 70px;
+  }
+  .jugador-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 0.95rem;
+  }
+  .jugador-list-avatar {
+    width: 36px;
+    height: 36px;
+    font-size: 0.95rem;
+  }
+  .jugador-list-card {
+    padding: 0.7rem 0.7rem;
+  }
+}

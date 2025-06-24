@@ -17,9 +17,57 @@
         <a href="partidosEnVivo.html">En Vivo</a>
       </nav>
       <div class="user-section">
-        <input type="text" placeholder="🔍 Search" />
-        <span class="icon">🔔</span>
-        <span class="avatar">👤</span>
+        <div class="search-box">
+          <input type="text" placeholder="Buscar..." />
+          <button class="search-btn" aria-label="Buscar">
+            <svg
+              width="20"
+              height="20"
+              fill="none"
+              stroke="#64748b"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="11" cy="11" r="7" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+          </button>
+        </div>
+        <button
+          class="icon-btn notification-btn"
+          aria-label="Notificaciones"
+        >
+          <svg
+            width="22"
+            height="22"
+            fill="none"
+            stroke="#64748b"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            viewBox="0 0 24 24"
+          >
+            <path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9" />
+            <path d="M13.73 21a2 2 0 01-3.46 0" />
+          </svg>
+        </button>
+        <button class="icon-btn avatar-btn" aria-label="Usuario">
+          <svg
+            width="28"
+            height="28"
+            fill="none"
+            stroke="#2563eb"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            viewBox="0 0 24 24"
+          >
+            <circle cx="12" cy="8" r="4" />
+            <path d="M4 20c0-4 4-6 8-6s8 2 8 6" />
+          </svg>
+        </button>
       </div>
     </header>
     <section id="estadisticas" class="estadisticas">
@@ -52,7 +100,7 @@
         <tbody>
           <tr>
             <td>1</td>
-            <td>Equipo A</td>
+            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo A</a></td>
             <td>15</td>
             <td>5</td>
             <td>5</td>
@@ -61,7 +109,7 @@
           </tr>
           <tr>
             <td>2</td>
-            <td>Equipo B</td>
+            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo B</a></td>
             <td>12</td>
             <td>5</td>
             <td>4</td>
@@ -70,7 +118,7 @@
           </tr>
           <tr>
             <td>3</td>
-            <td>Equipo C</td>
+            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo C</a></td>
             <td>9</td>
             <td>5</td>
             <td>3</td>
@@ -79,7 +127,7 @@
           </tr>
           <tr>
             <td>4</td>
-            <td>Equipo D</td>
+            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo D</a></td>
             <td>6</td>
             <td>5</td>
             <td>2</td>
@@ -88,7 +136,7 @@
           </tr>
           <tr>
             <td>5</td>
-            <td>Equipo E</td>
+            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo E</a></td>
             <td>3</td>
             <td>5</td>
             <td>1</td>
@@ -111,31 +159,31 @@
         <tbody>
           <tr>
             <td>Carlos R.</td>
-            <td>Equipo A</td>
+            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo A</a></td>
             <td>8</td>
             <td>3</td>
           </tr>
           <tr>
             <td>Sofía M.</td>
-            <td>Equipo B</td>
+            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo B</a></td>
             <td>6</td>
             <td>2</td>
           </tr>
           <tr>
             <td>Diego L.</td>
-            <td>Equipo A</td>
+            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo A</a></td>
             <td>5</td>
             <td>4</td>
           </tr>
           <tr>
             <td>Isabel G.</td>
-            <td>Equipo C</td>
+            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo C</a></td>
             <td>4</td>
             <td>1</td>
           </tr>
           <tr>
             <td>Martín S.</td>
-            <td>Equipo D</td>
+            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo D</a></td>
             <td>3</td>
             <td>2</td>
           </tr>
@@ -155,31 +203,31 @@
         <tbody>
           <tr>
             <td>Andrés P.</td>
-            <td>Equipo B</td>
+            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo B</a></td>
             <td>3</td>
             <td>0</td>
           </tr>
           <tr>
             <td>Laura F.</td>
-            <td>Equipo C</td>
+            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo C</a></td>
             <td>2</td>
             <td>1</td>
           </tr>
           <tr>
             <td>Javier H.</td>
-            <td>Equipo D</td>
+            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo D</a></td>
             <td>2</td>
             <td>0</td>
           </tr>
           <tr>
             <td>Elena V.</td>
-            <td>Equipo A</td>
+            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo A</a></td>
             <td>1</td>
             <td>1</td>
           </tr>
           <tr>
             <td>Ricardo N.</td>
-            <td>Equipo E</td>
+            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo E</a></td>
             <td>1</td>
             <td>0</td>
           </tr>

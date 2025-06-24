@@ -16,9 +16,70 @@
         <a href="partidosEnVivo.html">En Vivo</a>
       </nav>
       <div class="user-section">
-        <input type="text" placeholder="🔍 Search" />
-        <span class="icon">🔔</span>
-        <span class="avatar">👤</span>
+        <div class="search-box">
+          <input type="text" placeholder="Buscar..." />
+          <button class="search-btn" aria-label="Buscar">
+            <!-- Lupa con balón de fútbol -->
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#64748b"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="7" stroke="#64748b" fill="#fff" />
+              <circle cx="11" cy="11" r="3" stroke="#2563eb" fill="#e0e7ff" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <circle cx="11" cy="11" r="1" fill="#2563eb" />
+            </svg>
+          </button>
+        </div>
+        <button class="icon-btn notification-btn" aria-label="Notificaciones">
+          <!-- Campana con balón de fútbol -->
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#64748b"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9" />
+            <circle cx="12" cy="19" r="2.5" fill="#fff" stroke="#2563eb" stroke-width="1.5" />
+            <path d="M12 19m-1.2-1.2a1.7 1.7 0 1 0 3.4 0a1.7 1.7 0 1 0 -3.4 0" fill="#2563eb" stroke="#2563eb" stroke-width="0.5" />
+            <path d="M13.73 21a2 2 0 01-3.46 0" />
+          </svg>
+        </button>
+        <button class="icon-btn avatar-btn" aria-label="Usuario">
+          <!-- Avatar con balón de fútbol -->
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 32 32"
+            fill="none"
+            stroke="#2563eb"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="16" cy="11" r="6" fill="#fff" stroke="#2563eb" />
+            <circle cx="16" cy="11" r="2.2" fill="#2563eb" />
+            <path d="M4 28c0-5.5 5.5-8 12-8s12 2.5 12 8" stroke="#2563eb" />
+            <circle cx="16" cy="25" r="4" fill="#fff" stroke="#2563eb" />
+            <circle cx="16" cy="25" r="1.5" fill="#2563eb" />
+            <path
+              d="M16 7l1.5 2.5L20 10l-2.5 1.5L16 14l-1.5-2.5L12 10l2.5-1.5z"
+              fill="#fff"
+              stroke="#2563eb"
+              stroke-width="0.7"
+            />
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -39,7 +100,7 @@
         <button class="tab" data-target="finalizados">Finalizadas</button>
       </section>
 
-      COMPETICIONES ACTIVAS -->
+      <!-- COMPETICIONES ACTIVAS  -->
       <div class="tab-section active" id="activos">
         <h2>Competiciones Activas</h2>
 
@@ -52,23 +113,6 @@
               </p>
             </div>
           </a>
-          <div class="svg-icon">
-            Fútbol SVG -->
-            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-              <circle
-                cx="32"
-                cy="32"
-                r="30"
-                fill="#4CAF50"
-                stroke="#2E7D32"
-                stroke-width="4"
-              />
-              <path
-                d="M32 12l6 10h-12l6-10zM32 52l-6-10h12l-6 10zM12 32l10-6v12l-10-6zM52 32l-10 6V26l10 6z"
-                fill="#fff"
-              />
-            </svg>
-          </div>
         </div>
 
         <div class="torneo">
@@ -78,28 +122,10 @@
               Fútbol Sala | 1 de junio - 30 de junio | Organizado por Ayuntamiento de Villaverde
             </p>
           </div>
-          <div class="svg-icon">
-            Fútbol Sala SVG similar al fútbol -->
-            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-              <circle
-                cx="32"
-                cy="32"
-                r="30"
-                fill="#388E3C"
-                stroke="#1B5E20"
-                stroke-width="4"
-              />
-              <path
-                d="M22 22l20 20M42 22L22 42"
-                stroke="#fff"
-                stroke-width="3"
-              />
-            </svg>
-          </div>
         </div>
       </div>
 
-      COMPETICIONES PRÓXIMAS -->
+      <!-- COMPETICIONES PRÓXIMAS --> 
       <div class="tab-section" id="proximos">
         <h2>Próximas Competiciones</h2>
 
@@ -111,7 +137,6 @@
             </p>
           </div>
           <div class="svg-icon">
-            Fútbol 7 SVG -->
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
               <circle
                 cx="32"
@@ -134,7 +159,6 @@
             </p>
           </div>
           <div class="svg-icon">
-            Fútbol Playa SVG -->
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
               <circle
                 cx="32"
@@ -154,7 +178,7 @@
         </div>
       </div>
 
-      COMPETICIONES FINALIZADAS -->
+      <!-- COMPETICIONES FINALIZADAS  -->
       <div class="tab-section" id="finalizados">
         <h2>Competiciones Finalizadas</h2>
 
@@ -166,7 +190,6 @@
             </p>
           </div>
           <div class="svg-icon">
-            Fútbol SVG -->
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
               <circle
                 cx="32"
@@ -192,7 +215,6 @@
             </p>
           </div>
           <div class="svg-icon">
-            Fútbol 5 SVG -->
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
               <circle
                 cx="32"

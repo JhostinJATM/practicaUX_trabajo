@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Información del Equipo | SportBoard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/informacionEquipo.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">🏆 <strong>SportBoard</strong></div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#">Mis Competiciones</a>
+        <a href="#">Crear Competición</a>
+        <a href="partidosEnVivo.html">En Vivo</a>
+      </nav>
+      <div class="user-section">
+        <div class="search-box">
+          <input type="text" placeholder="Buscar..." />
+          <button class="search-btn" aria-label="Buscar">
+            <svg width="20" height="20" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </div>
+        <button class="icon-btn notification-btn" aria-label="Notificaciones">
+          <svg width="22" height="22" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+        </button>
+        <button class="icon-btn avatar-btn" aria-label="Usuario">
+          <svg width="28" height="28" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
+        </button>
+      </div>
+    </header>
+    <main class="equipo-info-container">
+      <button class="btn-volver" onclick="window.history.back()">← Volver</button>
+      <section class="equipo-banner">
+        <div class="equipo-icono">⚽</div>
+        <div class="equipo-banner-info">
+          <h1>Equipo A</h1>
+          <p class="categoria">Categoría: Fútbol 11</p>
+          <p class="entrenador">Entrenador: Juan Pérez</p>
+        </div>
+      </section>
+      <section class="equipo-detalle">
+        <h2>Plantilla</h2>
+        <div class="plantilla-lista">
+          <div class="jugador-list-card">
+            <div class="jugador-list-avatar">CR</div>
+            <div class="jugador-list-info">
+              <div class="jugador-list-nombre">Carlos R.</div>
+              <div class="jugador-list-posicion">Delantero</div>
+            </div>
+          </div>
+          <div class="jugador-list-card">
+            <div class="jugador-list-avatar">DL</div>
+            <div class="jugador-list-info">
+              <div class="jugador-list-nombre">Diego L.</div>
+              <div class="jugador-list-posicion">Centrocampista</div>
+            </div>
+          </div>
+          <div class="jugador-list-card">
+            <div class="jugador-list-avatar">EV</div>
+            <div class="jugador-list-info">
+              <div class="jugador-list-nombre">Elena V.</div>
+              <div class="jugador-list-posicion">Defensa</div>
+            </div>
+          </div>
+          <div class="jugador-list-card">
+            <div class="jugador-list-avatar">MS</div>
+            <div class="jugador-list-info">
+              <div class="jugador-list-nombre">Martín S.</div>
+              <div class="jugador-list-posicion">Portero</div>
+            </div>
+          </div>
+        </div>
+        <h2>Estadísticas</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Partidos Jugados</th>
+              <th>Victorias</th>
+              <th>Empates</th>
+              <th>Derrotas</th>
+              <th>Goles</th>
+              <th>Puntos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>5</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+              <td>18</td>
+              <td>15</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Resumen</h2>
+        <p class="resumen">
+          Equipo A ha mostrado un rendimiento sobresaliente en el torneo, liderando la tabla de posiciones y destacando por su ofensiva y solidez defensiva.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
