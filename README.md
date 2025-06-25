@@ -7,13 +7,13 @@
   <img src="imgs/interfaz4.png" alt="Interfaz 4" style="margin-bottom: 18px; max-width: 98%;"><br>
   <img src="imgs/interfaz5.png" alt="Interfaz 5" style="margin-bottom: 18px; max-width: 98%;"><br>
   <img src="imgs/interfaz6.png" alt="Interfaz 6" style="margin-bottom: 18px; max-width: 98%;"><br>
-  <img src="imgs/interfaz7.png" alt="Interfaz 7 - Móvil" style="margin-bottom: 18px; max-width: 320px; width: 90vw;"><br>
-  <img src="imgs/interfaz8.png" alt="Interfaz 8 - Móvil" style="margin-bottom: 18px; max-width: 320px; width: 90vw;"><br>
-  <img src="imgs/interfaz9.png" alt="Interfaz 9 - Móvil" style="margin-bottom: 18px; max-width: 320px; width: 90vw;"><br>
-  <img src="imgs/interfaz10.png" alt="Interfaz 10 - Móvil" style="margin-bottom: 18px; max-width: 320px; width: 90vw;"><br>
-  <img src="imgs/interfaz11.png" alt="Interfaz 11 - Móvil" style="margin-bottom: 18px; max-width: 320px; width: 90vw;"><br>
-  <img src="imgs/interfaz12.png" alt="Interfaz 12 - Móvil" style="margin-bottom: 18px; max-width: 320px; width: 90vw;"><br>
-  <img src="imgs/interfaz13.png" alt="Interfaz 13 - Móvil" style="margin-bottom: 18px; max-width: 320px; width: 90vw;">
+  <img src="imgs/interfaz7.png" alt="Interfaz 7 - Móvil" style="margin-bottom: 18px; max-width: 320px; width: 30vw;"><br>
+  <img src="imgs/interfaz8.png" alt="Interfaz 8 - Móvil" style="margin-bottom: 18px; max-width: 320px; width: 30vw;"><br>
+  <img src="imgs/interfaz9.png" alt="Interfaz 9 - Móvil" style="margin-bottom: 18px; max-width: 320px; width: 30vw;"><br>
+  <img src="imgs/interfaz10.png" alt="Interfaz 10 - Móvil" style="margin-bottom: 18px; max-width: 320px; width: 30vw;"><br>
+  <img src="imgs/interfaz11.png" alt="Interfaz 11 - Móvil" style="margin-bottom: 18px; max-width: 320px; width: 30vw;"><br>
+  <img src="imgs/interfaz12.png" alt="Interfaz 12 - Móvil" style="margin-bottom: 18px; max-width: 320px; width: 30vw;"><br>
+  <img src="imgs/interfaz13.png" alt="Interfaz 13 - Móvil" style="margin-bottom: 18px; max-width: 320px; width: 30vw;">
 </p>
 
 > **Nota:** Las imágenes de la interfaz 7 a la 13 corresponden a vistas diseñadas específicamente para la experiencia en dispositivos móviles.
