@@ -1,11 +1,22 @@
 # 🏆 SportBoard - Proyecto de Diseño UX/UI e Implementación Web
 
-![Interfaz 1](imgs/interfaz1.png)
-![Interfaz 2](imgs/interfaz2.png)
-![Interfaz 3](imgs/interfaz3.png)
-![Interfaz 4](imgs/interfaz4.png)
-![Interfaz 5](imgs/interfaz5.png)
-![Interfaz 6](imgs/interfaz6.png)
+<p align="center">
+  <img src="imgs/interfaz1.png" alt="Interfaz 1" style="margin-bottom: 18px; max-width: 98%;"><br>
+  <img src="imgs/interfaz2.png" alt="Interfaz 2" style="margin-bottom: 18px; max-width: 98%;"><br>
+  <img src="imgs/interfaz3.png" alt="Interfaz 3" style="margin-bottom: 18px; max-width: 98%;"><br>
+  <img src="imgs/interfaz4.png" alt="Interfaz 4" style="margin-bottom: 18px; max-width: 98%;"><br>
+  <img src="imgs/interfaz5.png" alt="Interfaz 5" style="margin-bottom: 18px; max-width: 98%;"><br>
+  <img src="imgs/interfaz6.png" alt="Interfaz 6" style="margin-bottom: 18px; max-width: 98%;"><br>
+  <img src="imgs/interfaz7.png" alt="Interfaz 7 - Móvil" style="margin-bottom: 18px; max-width: 98%;"><br>
+  <img src="imgs/interfaz8.png" alt="Interfaz 8 - Móvil" style="margin-bottom: 18px; max-width: 98%;"><br>
+  <img src="imgs/interfaz9.png" alt="Interfaz 9 - Móvil" style="margin-bottom: 18px; max-width: 98%;"><br>
+  <img src="imgs/interfaz10.png" alt="Interfaz 10 - Móvil" style="margin-bottom: 18px; max-width: 98%;"><br>
+  <img src="imgs/interfaz11.png" alt="Interfaz 11 - Móvil" style="margin-bottom: 18px; max-width: 98%;"><br>
+  <img src="imgs/interfaz12.png" alt="Interfaz 12 - Móvil" style="margin-bottom: 18px; max-width: 98%;"><br>
+  <img src="imgs/interfaz13.png" alt="Interfaz 13 - Móvil" style="margin-bottom: 18px; max-width: 98%;">
+</p>
+
+> **Nota:** Las imágenes de la interfaz 7 a la 13 corresponden a vistas diseñadas específicamente para la experiencia en dispositivos móviles.
 
 ---
 

@@ -10,6 +10,11 @@
   <body>
     <header class="navbar">
       <div class="logo">🏆 <strong>SportBoard</strong></div>
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <nav>
         <a href="index.html">Inicio</a>
         <a href="#">Mis Competiciones</a>
@@ -20,6 +25,7 @@
         <div class="search-box">
           <input type="text" placeholder="Buscar..." />
           <button class="search-btn" aria-label="Buscar">
+            <!-- Lupa con balón de fútbol -->
             <svg
               width="20"
               height="20"
@@ -70,178 +76,202 @@
         </button>
       </div>
     </header>
-    <section id="estadisticas" class="estadisticas">
-      <button
-        id="btnVolver"
-        class="btn-volver"
-        onclick="window.location.href='index.html'"
-      >
-        ← Volver a torneos
-      </button>
 
-      <h2>Estadísticas de Competicion</h2>
-      <p class="subtitulo">
-        Análisis detallado del rendimiento de los equipos en el torneo.
-      </p>
+    <!-- Drawer para móviles -->
+    <aside class="drawer" id="drawerMenu">
+      <div class="drawer-header">
+        <span class="drawer-icon">🏆</span> <span>SportBoard</span>
+        <button class="drawer-close-btn" aria-label="Cerrar menú">&times;</button>
+      </div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#">Mis Competiciones</a>
+        <a href="#">Crear Competición</a>
+        <a href="partidosEnVivo.html">En Vivo</a>
+      </nav>
+    </aside>
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
 
-      <h3>Tabla de Posiciones</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Posición</th>
-            <th>Equipo</th>
-            <th>Puntos</th>
-            <th>PJ</th>
-            <th>PG</th>
-            <th>PP</th>
-            <th>PE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo A</a></td>
-            <td>15</td>
-            <td>5</td>
-            <td>5</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo B</a></td>
-            <td>12</td>
-            <td>5</td>
-            <td>4</td>
-            <td>1</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo C</a></td>
-            <td>9</td>
-            <td>5</td>
-            <td>3</td>
-            <td>2</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo D</a></td>
-            <td>6</td>
-            <td>5</td>
-            <td>2</td>
-            <td>3</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo E</a></td>
-            <td>3</td>
-            <td>5</td>
-            <td>1</td>
-            <td>4</td>
-            <td>0</td>
-          </tr>
-        </tbody>
-      </table>
+    <main class="container">
+      <section id="estadisticas" class="estadisticas">
+        <button
+          id="btnVolver"
+          class="btn-volver"
+          onclick="window.location.href='index.html'"
+        >
+          ← Volver a torneos
+        </button>
 
-      <h3>Estadísticas de Goles</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Jugador</th>
-            <th>Equipo</th>
-            <th>Goles</th>
-            <th>Asistencias</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Carlos R.</td>
-            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo A</a></td>
-            <td>8</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>Sofía M.</td>
-            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo B</a></td>
-            <td>6</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>Diego L.</td>
-            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo A</a></td>
-            <td>5</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>Isabel G.</td>
-            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo C</a></td>
-            <td>4</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>Martín S.</td>
-            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo D</a></td>
-            <td>3</td>
-            <td>2</td>
-          </tr>
-        </tbody>
-      </table>
+        <h2>Estadísticas de Competicion</h2>
+        <p class="subtitulo">
+          Análisis detallado del rendimiento de los equipos en el torneo.
+        </p>
 
-      <h3>Estadísticas de Tarjetas</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Jugador</th>
-            <th>Equipo</th>
-            <th>Amarillas</th>
-            <th>Rojas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Andrés P.</td>
-            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo B</a></td>
-            <td>3</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>Laura F.</td>
-            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo C</a></td>
-            <td>2</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>Javier H.</td>
-            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo D</a></td>
-            <td>2</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>Elena V.</td>
-            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo A</a></td>
-            <td>1</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>Ricardo N.</td>
-            <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo E</a></td>
-            <td>1</td>
-            <td>0</td>
-          </tr>
-        </tbody>
-      </table>
+        <h3>Tabla de Posiciones</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Posición</th>
+              <th>Equipo</th>
+              <th>Puntos</th>
+              <th>PJ</th>
+              <th>PG</th>
+              <th>PP</th>
+              <th>PE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo A</a></td>
+              <td>15</td>
+              <td>5</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo B</a></td>
+              <td>12</td>
+              <td>5</td>
+              <td>4</td>
+              <td>1</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo C</a></td>
+              <td>9</td>
+              <td>5</td>
+              <td>3</td>
+              <td>2</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo D</a></td>
+              <td>6</td>
+              <td>5</td>
+              <td>2</td>
+              <td>3</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo E</a></td>
+              <td>3</td>
+              <td>5</td>
+              <td>1</td>
+              <td>4</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <h3>Resumen de Rendimiento</h3>
-      <p class="resumen">
-        Equipo A lidera la tabla con un rendimiento excepcional, destacando en
-        goles a favor. Equipo B sigue de cerca, mostrando una fuerte ofensiva.
-        Equipo C mantiene una posición intermedia con un juego equilibrado.
-        Equipo D y Equipo E enfrentan desafíos, necesitando mejorar su defensa y
-        ataque para avanzar en el torneo.
-      </p>
-    </section>
+        <h3>Estadísticas de Goles</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Jugador</th>
+              <th>Equipo</th>
+              <th>Goles</th>
+              <th>Asistencias</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Carlos R.</td>
+              <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo A</a></td>
+              <td>8</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Sofía M.</td>
+              <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo B</a></td>
+              <td>6</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Diego L.</td>
+              <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo A</a></td>
+              <td>5</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Isabel G.</td>
+              <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo C</a></td>
+              <td>4</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Martín S.</td>
+              <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo D</a></td>
+              <td>3</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Estadísticas de Tarjetas</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Jugador</th>
+              <th>Equipo</th>
+              <th>Amarillas</th>
+              <th>Rojas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Andrés P.</td>
+              <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo B</a></td>
+              <td>3</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Laura F.</td>
+              <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo C</a></td>
+              <td>2</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Javier H.</td>
+              <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo D</a></td>
+              <td>2</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Elena V.</td>
+              <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo A</a></td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Ricardo N.</td>
+              <td><a href="informacionEquipo.html" class="enlace-equipo">Equipo E</a></td>
+              <td>1</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Resumen de Rendimiento</h3>
+        <p class="resumen">
+          Equipo A lidera la tabla con un rendimiento excepcional, destacando en
+          goles a favor. Equipo B sigue de cerca, mostrando una fuerte ofensiva.
+          Equipo C mantiene una posición intermedia con un juego equilibrado.
+          Equipo D y Equipo E enfrentan desafíos, necesitando mejorar su defensa y
+          ataque para avanzar en el torneo.
+        </p>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/estadisticas.js"></script>
+    <script src="js/envivo.js"></script>
+    <script src="js/informacionEquipo.js"></script>
+    <script src="js/resultado-partido.js"></script>
+    <script src="js/partidosEnVivo.js"></script>
   </body>
 </html>

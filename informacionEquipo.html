@@ -10,6 +10,11 @@
   <body>
     <header class="navbar">
       <div class="logo">🏆 <strong>SportBoard</strong></div>
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <nav>
         <a href="index.html">Inicio</a>
         <a href="#">Mis Competiciones</a>
@@ -20,6 +25,7 @@
         <div class="search-box">
           <input type="text" placeholder="Buscar..." />
           <button class="search-btn" aria-label="Buscar">
+            <!-- Lupa con balón de fútbol -->
             <svg width="20" height="20" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
           </button>
         </div>
@@ -31,7 +37,23 @@
         </button>
       </div>
     </header>
-    <main class="equipo-info-container">
+
+    <!-- Drawer para móviles -->
+    <aside class="drawer" id="drawerMenu">
+      <div class="drawer-header">
+        <span class="drawer-icon">🏆</span> <span>SportBoard</span>
+        <button class="drawer-close-btn" aria-label="Cerrar menú">&times;</button>
+      </div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#">Mis Competiciones</a>
+        <a href="#">Crear Competición</a>
+        <a href="partidosEnVivo.html">En Vivo</a>
+      </nav>
+    </aside>
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+    <main class="container">
       <button class="btn-volver" onclick="window.history.back()">← Volver</button>
       <section class="equipo-banner">
         <div class="equipo-icono">⚽</div>
@@ -102,5 +124,11 @@
         </p>
       </section>
     </main>
+    <script src="js/script.js"></script>
+    <script src="js/estadisticas.js"></script>
+    <script src="js/envivo.js"></script>
+    <script src="js/informacionEquipo.js"></script>
+    <script src="js/resultado-partido.js"></script>
+    <script src="js/partidosEnVivo.js"></script>
   </body>
 </html>
